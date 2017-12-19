@@ -179,6 +179,7 @@ struct snd_compr_metadata {
 #define SNDRV_COMPRESS_DRAIN		_IO('C', 0x34)
 #define SNDRV_COMPRESS_NEXT_TRACK       _IO('C', 0x35)
 #define SNDRV_COMPRESS_PARTIAL_DRAIN    _IO('C', 0x36)
+#define SNDRV_COMPRESS_GET_METADATA _IOWR('C', 0x15, struct snd_compr_metadata)
 /*
  * TODO
  * 1. add mmap support
